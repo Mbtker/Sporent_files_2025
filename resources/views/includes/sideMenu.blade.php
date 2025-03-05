@@ -1,0 +1,27 @@
+
+
+<!-- SideMenu-->
+<a class="Arrow" href="#"><i class="fas fa-caret-left"></i></a>
+<div class="side-menu">
+    <div class="items">
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Supervisors') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Supervisors') }}"><i class="fas fa-user-tie"></i><span class="SideLabel">{{ __('messages.Supervisors') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Organizers') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Organizers') }}"><i class="fas fa-chalkboard-teacher"></i><span class="SideLabel">{{ __('messages.Organizers') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Players') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Players') }}"><i class="fas fa-running"></i><span class="SideLabel">{{ __('messages.Players') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Teams') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Teams') }}"><i class="fad fa-users-class"></i><span class="SideLabel">{{ __('messages.Teams') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Transfers') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Transfers') }}"><i class="fad fa-random"></i><span class="SideLabel">{{ __('messages.Transfers') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Coaches') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Coaches') }}"><i class="fad fa-user-secret"></i><span class="SideLabel">{{ __('messages.Coaches') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Referees') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Referees') }}"><i class="fad fa-child"></i><span class="SideLabel">{{ __('messages.Referees') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Stadiums') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Stadiums') }}"><i class="fas fa-hockey-puck"></i><span class="SideLabel">{{ __('messages.Stadiums') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Commentators') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Commentators') }}"><i class="fas fa-microphone"></i><span class="SideLabel">{{ __('messages.Commentators') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Photographers') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Photographers') }}"><i class="fas fa-camera"></i><span class="SideLabel">{{ __('messages.Photographers') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Sponsors') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Sponsors') }}"><i class="fad fa-wreath"></i><span class="SideLabel">{{ __('messages.Sponsors') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'AdvertisingAgencies') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('AdvertisingAgencies') }}"><i class="fab fa-adversal"></i><span class="SideLabel">{{ __('messages.AdvertisingAgencies') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Leagues') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Leagues') }}"><i class="fas fa-trophy"></i><span class="SideLabel">{{ __('messages.Leagues') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Matches') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Matches') }}"><i class="far fa-futbol"></i><span class="SideLabel">{{ __('messages.Matches') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Exercises') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Exercises') }}"><i class="fas fa-dumbbell"></i><span class="SideLabel">{{ __('messages.Exercises') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'Stores') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('Stores') }}"><i class="fas fa-store"></i><span class="SideLabel">{{ __('messages.Stores') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'ScoutsClubs') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('ScoutsClubs') }}"><i class="fas fa-binoculars"></i><span class="SideLabel">{{ __('messages.ScoutsClubs') }}</span></a></li>
+        <li class="@php if (\App\Http\Controllers\GlobalVariables::$SideMenuSelected == 'PhysiotherapyClinics') { echo 'SidMenuSelected';} @endphp"><a id="RestSortBy" href="{{ route('PhysiotherapyClinics') }}"><i class="fas fa-user-md"></i><span class="SideLabel">{{ __('messages.PhysiotherapyClinics') }}</span></a></li>
+    </div>
+</div>
+
