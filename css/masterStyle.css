@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
+
+
+/*@font-face {*/
+/*    font-family: "DejaVuSans";*/
+/*    src: url("assets/fonts/DejaVuSans-ExtraLight.eot");*/
+/*    src: url("assets/fonts/DejaVuSans-ExtraLight.woff") format("woff"),*/
+/*    url("assets/fonts/DejaVuSans-ExtraLight.otf") format("opentype"),*/
+/*    url("assets/fonts/DejaVuSans-ExtraLight.svg#filename") format("svg");*/
+/*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Almarai:wght@300&family=Amiri&family=Cairo:wght@200;300;400;500;600&family=Tajawal:wght@200;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'DejaVuSans';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("webfonts/fa-solid-900.eot");
+    src: url("webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-solid-900.woff2") format("woff2"), url("webfonts/fa-solid-900.woff") format("woff"), url("webfonts/fa-solid-900.ttf") format("truetype"), url("webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Tajawal';
+}
+
+:root
+{
+    --direction_ltr: ltr;
+    --direction_rtl: rtl;
+    --direction_right: right;
+    --direction_left: left;
+
+    --dark_color: #3E0277;
+    --deep_color: #d3fff8d7;
+    --light_color: #BEEEE3;
+    --hover_color: rgba(190, 238, 227, 0.23);
+    --white_color: white;
+
+    --rotate: 360deg;
+    --rotate_close: 180deg;
+
+}
+
+body.Ar
+{
+    --direction_ltr: rtl;
+    --direction_rtl: ltr;
+    --direction_right: left;
+    --direction_left: right;
+    --rotate: 180deg;
+    --rotate_close: 360deg;
+}
+
+body.Ar .btn-close
+{
+    position: absolute;
+    left: 10px;
+}
+
+body
+{
+    direction: var(--direction_ltr);
+}
+
+
+#share{
+    position: fixed;
+    top:50%; right:-24.5rem;
+    display: flex;
+    transform: translateY(-50%);
+    /* box-shadow: 0 .3rem .5rem rgba(0,0,0,.3); */
+    z-index: 100;
+}
+#share.share-active{
+    right:0;
+}
+
+#share i, #share a{
+    font-size: 2rem;
+    padding:1.5rem 2rem;
+}
+
+#share i{
+    background:var(--blue2);
+    color:#fff;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+}
+
+#share a{
+    background:#fff;
+    color:var(--blue);
+    border-left: .1rem solid rgba(0,0,0,.3);
+}
+
+#share a:hover {
+    background:var(--blue);
+    color:#fff;
+}
+
+#share i:hover {
+    background:var(--ya);;
+}
